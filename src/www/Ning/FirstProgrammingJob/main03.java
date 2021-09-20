@@ -1,7 +1,5 @@
 package www.Ning.FirstProgrammingJob;
 
-import www.Ning.DEMO.Tools;
-
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
@@ -17,7 +15,7 @@ public class main03 {
         {
             way = scan.next();
         }
-        String CodeStr = fileRead(way);//codestr是存储代码的字符串
+        String CodeStr1 = fileRead(way);//codestr是存储代码的字符串
         Scanner scan1  =  new Scanner(System.in);
         if(scan1.hasNextLine())
         {
@@ -27,7 +25,7 @@ public class main03 {
         {
             while (true)
             {
-                System.out.println("输入错误，请重新输入1~4中的任意一个数字：");
+                System.out.println("输入错误，请重新输入1~4中的一个数字：");
                 if(scan1.hasNextLine())
                 {
                     level = scan1.nextInt();//level是存储对应等级的
@@ -36,7 +34,7 @@ public class main03 {
                     break;
             }
         }
-        else
+        else//输入正确对应的完成等级之后输出对应的结果
         {
             if(level == 1)
             {
@@ -56,6 +54,11 @@ public class main03 {
 
             }
         }
+        Tools tools = new Tools();
+        String CodeStr = null;
+        CodeStr = tools.del(CodeStr1);
+        System.out.println(CodeStr);
+
     }
 
     public static String fileRead(String strr) throws Exception {

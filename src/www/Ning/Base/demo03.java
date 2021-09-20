@@ -8,7 +8,7 @@ public class demo03 {
 
         while(sb.indexOf("/*")!=-1){
             int x = sb.indexOf("/*");
-            int y = str.indexOf("*/");
+            int y = sb.indexOf("*/");
             sb.delete(x,y+1);
         }
     }
