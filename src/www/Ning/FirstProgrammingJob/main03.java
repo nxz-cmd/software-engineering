@@ -43,10 +43,11 @@ public class main03 {
         }
         else//输入正确对应的完成等级之后输出对应的结果
         {
+            int onee = 0;
             if(level == 1)
             {
                 Grade_one one = new Grade_one();
-                one.OUT1(CodeStr);
+                onee = one.OUT1(CodeStr);
 
             }
             else if(level == 2)
@@ -57,12 +58,17 @@ public class main03 {
             else if(level == 3)
             {
                 Grade_three three = new Grade_three();
-                three.OUT3(CodeStr);
+                int ie = three.OUT3(CodeStr);
             }
             else if(level == 4)
             {
-                Grade_four four = new Grade_four();
-                four.OUT4(CodeStr);
+                Grade_one one = new Grade_one();
+                onee = one.OUT1(CodeStr);
+                Grade_two two = new Grade_two();
+                two.OUT2(CodeStr);
+                Grade_three three = new Grade_three();
+                int iee = three.OUT3(CodeStr);
+                System.out.println("if-elseif-else num:" + iee);
             }
         }
 

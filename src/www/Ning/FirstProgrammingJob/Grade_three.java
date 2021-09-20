@@ -4,7 +4,7 @@ package www.Ning.FirstProgrammingJob;
 import java.util.Stack;
 
 public class Grade_three {
-    public void OUT3(String str) {
+    public int OUT3(String str) {
         String[] flag = str.split("else[{]");
         int I_E_NUM = 0;
         int I_E_E_NUM =0;
@@ -37,8 +37,8 @@ public class Grade_three {
         }
 
         I_E_E_NUM = sum - I_E_NUM;
-        System.out.println("if else num:" + I_E_NUM);
-        System.out.println("if elseif else num:" + I_E_E_NUM);
+        System.out.println("if-else-num:" + I_E_NUM);
+        return I_E_E_NUM;
 
     }
 }

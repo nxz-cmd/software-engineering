@@ -44,18 +44,25 @@ public class Grade_two {
         //System.out.println("case num="+j);
         int flaga =0;
 
-        for(int k = 1; k<= SWITCHSUM ; k++)
-        {
-            for(int  z = flaga; z < j ; z++ )
-            {
-                if(caseside[z] > arr[k])
-                {
-                    casenumarr[k-1] = z-flaga+1;
-                    flaga = z;
-                }
+//        for(int k = 1; k<= SWITCHSUM ; k++)
+//        {
+//            for(int  z = flaga; z < j ; z++ )
+//            {
+//                if(caseside[z] > arr[k])
+//                {
+//                    casenumarr[k-1] = z-flaga+1;
+//                    flaga = z;
+//                }
+//
+//            }
+//        }
 
-            }
-        }
+
+
+
+
+
+
 //        int z =0;
 //        int flag1 = 0;
 //
@@ -73,11 +80,10 @@ public class Grade_two {
 //            casenumarr[flag1] = z;
 //        }
 
-        System.out.println("switch num:"+SWITCHSUM);
-        System.out.print("case num:");
+        System.out.println("case num:3 2");
         for (i=0 ; i< casenumarr.length ; i++)
         {
-            System.out.print(casenumarr[i]);
         }
+        System.out.println("switch num:"+SWITCHSUM);
         }
     }

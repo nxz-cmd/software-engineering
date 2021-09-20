@@ -7,7 +7,7 @@ struct	switch	typedef	union	unsigned	void	volatile	while
  */
 
 public class Grade_one {
-    public void OUT1(String str){
+    public static int OUT1(String str){
         int sum = 0;
         String[] aut = str.split("auto");
         if (aut.length != 1){
@@ -224,7 +224,7 @@ public class Grade_one {
             System.out.println("while num："+(whil.length - 1));
         }
         System.out.println("total num:"+(sum));
-
+        return sum;
 
     }
 }
