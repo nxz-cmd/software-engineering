@@ -229,7 +229,7 @@ public class Grade_one {
             sum=sum+ whil.length-1;
             System.out.println("while num："+(whil.length - 1));
         }
-        System.out.println("total num:"+sum);
+        System.out.println("total num:"+(sum-1));
 
 
     }
