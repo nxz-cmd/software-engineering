@@ -10,8 +10,15 @@ public class Grade_two {
         arr = new int[SWITCHSUM];
         int[] casenumarr;
         casenumarr = new int[SWITCHSUM];
+        int j = 0 ;
+
+        String[] volatil = str.split("case");
+        if (volatil.length != 1){
+            j = volatil.length - 1;
+        }
+
         int[] caseside;
-        caseside = new int[30];
+        caseside = new int[j];
         int index=-1;
         do{                       //记录switch的下标
             index=str.indexOf("switch",index+1);
@@ -20,30 +27,33 @@ public class Grade_two {
                 i++;
             }
         }while(index!=-1);
-
-        int j =0;
+        int aaa = 0;
 
         do{                            //记录case的下标
             index=str.indexOf("case",index+1);
             if(index!=-1){
 
-                caseside[j] = index;
-                j++;
+                caseside[aaa] = index;
+                aaa++;
 
             }
         }while(index!=-1);
+
+
+
         //System.out.println("case num="+j);
+        int flaga =0;
 
         for(int k = 1; k<= SWITCHSUM ; k++)
         {
-            for(int z = 0 ; z < j ; z++ )
+            for(int  z = flaga; z < j ; z++ )
             {
-
                 if(caseside[z] > arr[k])
                 {
-                    casenumarr[k] = z;
-                    break;
+                    casenumarr[k-1] = z-flaga+1;
+                    flaga = z;
                 }
+
             }
         }
 //        int z =0;
