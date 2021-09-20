@@ -58,12 +58,6 @@ public class Grade_one {
         }
 
 
-        String[] d = str.split("do");
-        if (d.length != 1){
-            sum=sum+ d.length-1;
-            System.out.println("do num："+(d.length - 1));
-        }
-
 
         String[] doubl = str.split("double");
         if (doubl.length != 1){
@@ -229,7 +223,7 @@ public class Grade_one {
             sum=sum+ whil.length-1;
             System.out.println("while num："+(whil.length - 1));
         }
-        System.out.println("total num:"+(sum-1));
+        System.out.println("total num:"+(sum));
 
 
     }
