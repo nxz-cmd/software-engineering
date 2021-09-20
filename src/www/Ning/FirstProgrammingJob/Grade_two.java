@@ -32,29 +32,30 @@ public class Grade_two {
 
             }
         }while(index!=-1);
-
-        int z =0;
-        int flag1 = 0;
-
-        for (int k = 0; k < caseside.length; k++) {
-
-            if(caseside[k] < arr[flag1+1]){
-                z++;
-            }
-            else
-            {
-                flag1++;
-                z=0;
-                k = k-1;
-            }
-            casenumarr[flag1] = z;
-        }
+        System.out.println("case num="+j);
+//
+//        int z =0;
+//        int flag1 = 0;
+//
+//        for (int k = 0; k < caseside.length; k++) {
+//
+//            if(caseside[k] < arr[flag1+1]){
+//                z++;
+//            }
+//            else
+//            {
+//                flag1++;
+//                z=0;
+//                k = k-1;
+//            }
+//            casenumarr[flag1] = z;
+//        }
 
         System.out.println("switch num:"+SWITCHSUM);
-        System.out.print("case num:");
-        for (i=0 ; i< casenumarr.length ; i++)
-        {
-            System.out.print(casenumarr[i]);
-        }
+//        System.out.print("case num:");
+//        for (i=0 ; i< casenumarr.length ; i++)
+//        {
+//            System.out.print(casenumarr[i]);
+//        }
         }
     }
