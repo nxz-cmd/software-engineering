@@ -21,7 +21,14 @@ public class main03 {
         {
             level = scan1.nextInt();//level是存储对应等级的
         }
-        if(level<=0||level>4)
+
+
+        Tools tools = new Tools();//利用tools类里的del方法删除所有注释
+        String CodeStr = null;
+        CodeStr = tools.del(CodeStr1);
+
+
+        if(level<=0||level>4)//判断输入对应的等级并开始执行操作
         {
             while (true)
             {
@@ -38,26 +45,26 @@ public class main03 {
         {
             if(level == 1)
             {
+                Grade_one one = new Grade_one();
+                one.OUT1(CodeStr);
 
             }
             else if(level == 2)
             {
-
+                Grade_two two = new Grade_two();
+                two.OUT2(CodeStr);
             }
             else if(level == 3)
             {
-
-
+                Grade_three three = new Grade_three();
+                three.OUT3(CodeStr);
             }
             else if(level == 4)
             {
-
+                Grade_four four = new Grade_four();
+                four.OUT4(CodeStr);
             }
         }
-        Tools tools = new Tools();
-        String CodeStr = null;
-        CodeStr = tools.del(CodeStr1);
-        System.out.println(CodeStr);
 
     }
 
